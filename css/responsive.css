@@ -1,0 +1,15 @@
+/*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (max-width: 1920px) {
+
+}
+@media all and (max-width: 1366px) {
+    .section-hero {
+        height: 700px;
+    }
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 375px) {
+
+}
