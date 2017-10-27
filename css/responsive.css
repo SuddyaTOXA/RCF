@@ -3,12 +3,171 @@
 
 }
 @media all and (max-width: 1366px) {
-    .section-hero {
-        height: 700px;
-    }
+    /*.section-hero {*/
+        /*height: 700px;*/
+    /*}*/
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
+    .container {
+        max-width: 375px;
+    }
+    #header {
+        height: 62px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+        .logo {
+            float: none;
+            max-width: 177px;
+            margin: 0 auto;
+        }
+            .logo a {
+                font-size: 16.5px;
+            }
+                .logo a span {
+                    font-size: 8px;
+                }
+        .desktop {
+            display: none !important;
+        }
+        .mobile-menu-wrap,
+        .mobile-menu-toggle {
+            display: block;
+        }
 
+    .section-hero {
+        padding-top: 60px;
+        min-height: 810px;
+    }
+        .hero-table {
+            height: 428px;
+            padding: 72px 0 80px;
+        }
+            .hero-cell {
+                vertical-align: top;
+            }
+                .hero-title {
+                    margin-bottom: 4px;
+                    font-size: 49px;
+                }
+                    .hero-title .big {
+                        padding-left: 6px;
+                    }
+                    .hero-title .small {
+                        margin-bottom: 4px;
+                        font-size: 13px;
+                    }
+                .hero-line {
+                    padding: 0 8px;
+                    font-size: 13px;
+                }
+                .hero-line:before,
+                .hero-line:after {
+                    width: 78px;
+                }
+                .hero-line:before {
+                    left: -78px;
+                }
+                .hero-line:after {
+                    right: -78px;
+                }
+    .long-tabs {
+        display: block;
+    }
+        .long-tabs > *:nth-child(even) a.long-tab-box{
+            border-right: none;
+        }
+        .long-tabs-cell {
+            float: left;
+            display: block;
+            width: 50%;
+        }
+            a.long-tab-box {
+                min-height: 160px;
+                background-color: #000000;
+                border-right: 1px solid #2D2D2D;
+                border-bottom: 1px solid #2D2D2D;
+            }
+            a.long-tab-box:hover,
+            a.long-tab-box:focus {
+                min-height: 160px;
+                background-color: rgba(255, 255, 255, .1);
+            }
+                .long-tab-info {
+                    margin-bottom: 13px;
+                    padding-bottom: 7px;
+                    font-size: 14px;
+                }
+                .long-tab-info:after {
+                    width: 29px;
+                }
+                .long-tab-title {
+                    min-height: 36px;
+                    font-size: 15px;
+                }
+                    .long-tab-title span {
+                        padding-top: 0;
+                        font-size: 50px;
+                        line-height: 36px;
+                    }
+                .long-tab-sub-title {
+                    font-size: 11px;
+                }
+                .learn-more {
+                    display: none;
+                }
+
+    .section-built {
+        display: none;
+    }
+    a.btn,
+    .btn {
+        padding: 11px 10px 9px;
+        min-width: 174px;
+        font-size: 10px;
+    }
+    #footer {}
+        #footer .container {
+            max-width: 375px;
+        }
+            .footer-top-box {
+                padding-top: 46px;
+                padding-bottom: 50px;
+            }
+                #footer .section-title {
+                    margin-bottom: 8px;
+                    font-size: 23px;
+                }
+                #footer .section-desc {
+                    margin-bottom: 26px;
+                    max-width: 320px;
+                    font-size: 14px;
+                    letter-spacing: .015em;
+                    line-height: 1.4;
+                }
+            .footer-bottom-box {
+                background-color: #000000;
+                background-image: none !important;
+            }
+                #footer .footer-coll-box .section-desc {
+                    display: none;
+                }
+                .power-by,
+                .footer-coll-link,
+                .footer-title-box {
+                    display: none;
+                }
+                    .footer-contact-box {
+                        float: none;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .copyright {
+                        float: none;
+                        max-width: 320px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
 }
 @media all and (max-width: 375px) {
 
