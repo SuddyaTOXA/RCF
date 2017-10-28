@@ -1235,9 +1235,9 @@ a.btn.inverse:focus:before,
         /*padding-top: 54px;*/
         padding-bottom: 43px;
         background-color: #0a0a0a;
-        background-position: center -90px;
+        background-position: center 0;
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
     }
         .footer-coll-box {
            overflow: hidden;
