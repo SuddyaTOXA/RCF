@@ -302,7 +302,6 @@
             .hero-table  > *:nth-child(1):nth-last-child(2):not(.next-action-cell) .hero-line:after {
                 right: -78px;
             }
-            /*.hero-table  > *:nth-child(1):nth-last-child(2):not(.next-action-cell) {}*/
 
     .next-action-cell {
         display: table-footer-group;
