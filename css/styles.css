@@ -263,6 +263,9 @@ a.btn.inverse:focus:before,
     padding-top: 30px;
     padding-bottom: 20px;
 }
+    #header .container {
+        position: relative;
+    }
     .logo {
         float: left;
         margin-left: -10px;
@@ -435,7 +438,7 @@ a.btn.inverse:focus:before,
             }
             .main-nav > ul > li:hover > a + .dropdown-menu-wrap,
             .main-nav > ul > li > a:focus + .dropdown-menu-wrap {
-                top: 82px;
+                top: 52px;
                 visibility: visible;
                 opacity: 1;
             }
@@ -480,7 +483,7 @@ a.btn.inverse:focus:before,
 .dropdown-menu-wrap {
     position: absolute;
     display: block;
-    top: 100px;
+    top: 72px;
     right: 28px;
     width: -webkit-calc(100% - 158px);
     width: calc(100% - 158px);
@@ -865,7 +868,7 @@ a.btn.inverse:focus:before,
             display: table;
             width: 100%;
             height: 702px;
-            padding: 48px 0 80px;
+            padding: 48px 0 32px;
         }
             .hero-cell {
                 display: table-cell;
@@ -1296,6 +1299,7 @@ a.btn.inverse:focus:before,
             padding-top: 86px;
             padding-bottom: 54px;
             text-align: center;
+            
         }
             .footer-title {
                 margin-bottom: 12px;
@@ -1395,6 +1399,11 @@ a.btn.inverse:focus:before,
                         color: #862e2b;
                         text-decoration: none;
                     }
+                    a[href^="tel:"].contact-link:hover,
+                    a[href^="tel:"].contact-link:focus {
+                        color: #ffffff;
+                    }
+
     .copyright,
     .power-by {
         font: 500 12px/1.25 "URWDINSemiCond", Arial, sans-serif;

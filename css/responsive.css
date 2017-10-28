@@ -24,6 +24,7 @@
                 }
     .dropdown-menu-wrap,
     .dropdown-menu-wrap.sales {
+        top: 67px;
         width: -webkit-calc(100% - 20px);
         width: calc(100% - 20px);
         right: 50%;
@@ -49,7 +50,7 @@
     }
     .main-nav > ul > li:hover > a + .dropdown-menu-wrap,
     .main-nav > ul > li > a:focus + .dropdown-menu-wrap {
-        top: 67px;
+        top: 47px;
     }
 .section-hero {
     min-height: 800px;
@@ -159,6 +160,9 @@
         height: 62px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    #header .container {
+        position: initial;
     }
         .logo {
             position: relative;
