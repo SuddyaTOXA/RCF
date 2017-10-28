@@ -22,8 +22,8 @@
                     padding-right: 14px;
                     font-size: 18px;
                 }
-    .dropdown-menu,
-    .dropdown-menu.sales {
+    .dropdown-menu-wrap,
+    .dropdown-menu-wrap.sales {
         width: -webkit-calc(100% - 20px);
         width: calc(100% - 20px);
         right: 50%;
@@ -47,8 +47,8 @@
     .dropdown-coll-list > li:nth-child(2):nth-last-child(1) {
         padding-left: 20px;
     }
-    .main-nav > ul > li:hover > a + .dropdown-menu,
-    .main-nav > ul > li > a:focus + .dropdown-menu {
+    .main-nav > ul > li:hover > a + .dropdown-menu-wrap,
+    .main-nav > ul > li > a:focus + .dropdown-menu-wrap {
         top: 67px;
     }
 .section-hero {
