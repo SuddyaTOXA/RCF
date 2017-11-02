@@ -1,6 +1,7 @@
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1280px) {
     .dropdown-menu-wrap.sales {
+        max-width: 1020px;
         max-width: -webkit-calc(100% - 220px);
         max-width: calc(100% - 220px);
     }
