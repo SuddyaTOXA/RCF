@@ -916,6 +916,7 @@ a.dropdown-top-box,
 a.dropdown-top-box:hover .dropdown-small-link,
 .dropdown-top-box:focus .dropdown-small-link {
   color: #862e2b;
+  opacity: 1;
 }
 .sales .dropdown-title.small {
   line-height: 1.3;
