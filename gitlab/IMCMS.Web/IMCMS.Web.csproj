@@ -185,6 +185,7 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageUploaderController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="DatabaseExpireUser.cs" />
     <Compile Include="Features.cs" />
     <Compile Include="Filters\FeatureFlagFilter.cs" />
@@ -326,10 +327,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="includes\fonts\rift\" />
-    <Folder Include="includes\fonts\semicond\" />
-    <Folder Include="includes\fonts\trajan\" />
-    <Folder Include="Views\Sales\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -384,6 +381,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\ImageUploader\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="includes\fonts\rift\Rift-Demi.eot" />
+    <Content Include="includes\fonts\rift\Rift-Demi.ttf" />
+    <Content Include="includes\fonts\rift\Rift-Demi.woff" />
+    <Content Include="includes\fonts\rift\Rift-Light.eot" />
+    <Content Include="includes\fonts\rift\Rift-Light.ttf" />
+    <Content Include="includes\fonts\rift\Rift-Light.woff" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Demi.eot" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Demi.ttf" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Demi.woff" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Light.eot" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Light.ttf" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Light.woff" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Medium.eot" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Medium.ttf" />
+    <Content Include="includes\fonts\semicond\URWDINSemiCond-Medium.woff" />
+    <Content Include="includes\fonts\trajan\TrajanPro3-Regular.eot" />
+    <Content Include="includes\fonts\trajan\TrajanPro3-Regular.ttf" />
+    <Content Include="includes\fonts\trajan\TrajanPro3-Regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sales\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sales\Detail.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
