@@ -213,14 +213,11 @@ a.btn,
   word-spacing: 0.02em;
   letter-spacing: .03em;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
-
-a.btn span,
-.btn span {
-  position: relative;
-  z-index: 7;
-}
-
 a.btn:before,
 .btn:before {
   position: absolute;
@@ -247,7 +244,6 @@ a.btn:before,
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-
 a.btn:hover,
 a.btn:focus,
 .btn:hover,
@@ -262,7 +258,11 @@ a.btn:focus:before,
 .btn:focus:before {
   background-color: transparent;
 }
-
+  a.btn span,
+  .btn span {
+    position: relative;
+    z-index: 7;
+  }
 a.btn.inverse,
 .btn.inverse {
   color: #ffffff;
@@ -283,7 +283,119 @@ a.btn.inverse:focus:before,
   background-color: #862e2b;
   border-color: #862e2b;
 }
-/*----------------------------------------------------------------------------------*/
+a.btn.white,
+.btn.white {
+  color: #862e2b;
+}
+a.btn.white:before,
+.btn.white:before {
+  border-color: #862e2b;
+  background-color: #ffffff;
+}
+a.btn.white:hover,
+a.btn.white:focus,
+.btn.white:hover,
+.btn.white:focus {
+  color: #ffffff;
+}
+a.btn.white:hover:before,
+a.btn.white:focus:before,
+.btn.white:hover:before,
+.btn.white:focus:before {
+  background-color: #862e2b;
+}
+
+a.btn.arrow,
+.btn.arrow {
+  padding-left: 28px;
+  padding-right: 28px;
+  text-align: left;
+}
+a.btn.arrow:after,
+.btn.arrow:after {
+  position: absolute;
+  z-index: 8;
+  content: '\f105';
+  right: 25px;
+  top: 50%;
+  font-family: 'FontAwesome';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+a.btn.arrow:hover:after,
+a.btn.arrow:focus:after,
+.btn.arrow:hover:after,
+.btn.arrow:focus:after {
+  color: #862e2b;
+}
+a.btn.small,
+.btn.small {
+  min-width: 204px;
+  font-size: 12px;
+  padding: 12px 15px 11px;
+}
+a.btn.small:before,
+.btn.small:before {
+  -webkit-transform: skew(-16deg);
+  -khtml-transform: skew(-16deg);
+  -moz-transform: skew(-16deg);
+  -ms-transform: skew(-16deg);
+  -o-transform: skew(-16deg);
+  transform: skew(-16deg);
+}
+a.btn.small.arrow,
+.btn.small.arrow {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+a.btn.small.arrow:after,
+.btn.small.arrow:after {
+  font-size: 18px;
+}
+a.btn.bull,
+.btn.bull {
+  min-width: inherit;
+  padding: 4px 22px 5px;
+  font-size: 12px;
+}
+
+a.btn.sold,
+.btn.sold {
+  color: #ffffff;
+}
+  a.btn.sold:before,
+  .btn.sold:before {
+    border-color: #000000;
+    background-color: #000000;
+  }
+  a.btn.sold:hover,
+  a.btn.sold:focus,
+  .btn.sold:hover,
+  .btn.sold:focus {
+    color: #000000;
+  }
+  a.btn.sold:hover:before,
+  a.btn.sold:focus:before,
+  .btn.sold:hover:before,
+  .btn.sold:focus:before {
+    background-color: transparent;
+  }
+  /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 #header {
@@ -1652,18 +1764,24 @@ a.learn-more .fa,
           .bull-desc {
             overflow: hidden;
           }
-            .lot-tattoo-box {
-              margin-top: -5px;
-              margin-bottom: 20px;
+            .bull-desc > *:last-child {
+              margin-bottom: 0;
             }
-              .lot-tattoo-box > * {
+          .lot-tattoo-wrap  {
+            margin-top: -5px;
+            margin-bottom: 18px;
+          }
+            .lot-tattoo-box {
+              display: inline-block;
+            }
+              .lot-tattoo-box > span {
                 position: relative;
                 margin-left: 42px;
               }
-              .lot-tattoo-box > *:first-child {
+              .lot-tattoo-box > span:first-child {
                 margin-left: 0;
               }
-              .lot-tattoo-box > *:not(:first-child):before {
+              .lot-tattoo-box > span:not(:first-child):before {
                 position: absolute;
                 content: '';
                 left: -25px;
@@ -1682,31 +1800,151 @@ a.learn-more .fa,
                 font: 600 34px/1 "URWDINSemiCond", Arial, sans-serif;
                 letter-spacing: .02em;
               }
-            .bull-info {
-              display: block;
-              margin-bottom: 2px;
-              margin-left: 1px;
-              font-size: 18px;
-              font-weight: 400;
-              letter-spacing: .04em;
+          .lot-tattoo-btn-box {
+            position: relative;
+            top: -6px;
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: -3px;
+          }
+            .buy-bull > *:not(:first-child) {
+              margin-left: -14px;
             }
-            .bull-info.small {
-              font-size: 14px;
-              letter-spacing: .025em;
+              a.buy-bull:hover .btn,
+              a.buy-bull:focus .btn,
+              .buy-bull:hover a.btn,
+              .buy-bull:focus a.btn {
+                color: #862e2b;
+              }
+              a.buy-bull:hover .btn:before,
+              a.buy-bull:focus .btn:before,
+              .buy-bull:hover a.btn:before,
+              .buy-bull:focus a.btn:before {
+                background-color: #ffffff;
+              }
+              a.buy-bull:hover .btn.white,
+              a.buy-bull:focus .btn.white,
+              .buy-bull:hover a.btn.white,
+              .buy-bull:focus a.btn.white {
+                color: #ffffff;
+              }
+              a.buy-bull:hover .btn.white:before,
+              a.buy-bull:focus .btn.white:before,
+              .buy-bull:hover a.btn.white:before,
+              .buy-bull:focus a.btn.white:before {
+                background-color: #862e2b;
+              }
+
+              a.buy-bull:hover,
+              a.buy-bull:focus,
+              .buy-bull:hover,
+              .buy-bull:focus {
+
+              }
+              a.buy-bull:hover,
+              a.buy-bull:focus,
+              .buy-bull:hover,
+              .buy-bull:focus {
+
+              }
+              a.buy-bull:hover,
+              a.buy-bull:focus,
+              .buy-bull:hover,
+              .buy-bull:focus {
+
+              }
+              a.buy-bull:hover,
+              a.buy-bull:focus,
+              .buy-bull:hover,
+              .buy-bull:focus {
+
+              }
+            .bull-info-box {
+              margin-bottom: 18px;
             }
-            .sire-dob-box {}
-              .sire-box {}
-              .dob-box {}
-                .sire-dob-title {}
-            .bull-desc-table {}
-              .bull-desc-table thead {}
-                .bull-desc-table thead tr {}
-                  .bull-desc-table thead th {}
-              .bull-desc-table tbody{}
-                .bull-desc-table tbody tr {}
-                  .bull-desc-table tbody td {}
-                  .bull-desc a.btn,
-                  .bull-desc .btn {}
+              .bull-info {
+                display: block;
+                margin-bottom: 2px;
+                margin-left: 1px;
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: .04em;
+              }
+              .bull-info.small {
+                font-size: 14px;
+                letter-spacing: .025em;
+              }
+            .sire-dob-box {
+              overflow: hidden;
+              margin-bottom: 25px;
+            }
+              .sire-dob-box > * {
+                float: left;
+                width: 50%;
+                padding: 0 2px;
+              }
+              .sire-box {
+                width: 54.5%;
+              }
+              .dob-box {
+                width: 45.5%;
+              }
+                .sire-dob-title {
+                  margin-bottom: -5px;
+                  font-size: 10px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: #949494;
+                }
+                  .sire-box span,
+                  .dob-box span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: .02em;
+                  }
+                  .sire-box span {
+                    text-transform: uppercase;
+                  }
+              .bull-desc-table {
+                margin-left: 2px;
+                margin-bottom: 28px;
+                width: 100%;
+              }
+              .bull-desc-table thead {
+                font-size: 10px;
+                line-height: 1;
+                font-weight: 700;
+                color: #959595;
+                border-bottom: 1px solid #000000;
+              }
+                  .bull-desc-table thead th {
+                    padding-bottom: 2px;
+                  }
+                  .bull-desc-table thead th,
+                  .bull-desc-table tbody td {
+                    text-align: center;
+                    padding-left: 2px;
+                    padding-right: 2px;
+                    border-left: 1px solid #c4c4c4;
+                  }
+                  .bull-desc-table thead th:first-child,
+                  .bull-desc-table tbody td:first-child {
+                    text-align: left;
+                    border-left: none;
+                  }
+              .bull-desc-table tbody{
+                font-size: 14px;
+                line-height: 1;
+                font-weight: 400;
+              }
+
+                  .bull-desc-table tbody td {
+                    padding-top: 3px;
+                  }
+                  /*.bull-desc a.btn,*/
+                  /*.bull-desc .btn {*/
+                    /*margin-left: 2px;*/
+                  /*}*/
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1718,7 +1956,7 @@ a.learn-more .fa,
 }
   .widget-filter {}
     .widget-title {
-      margin-bottom: 3px;
+      margin-bottom: 4px;
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
@@ -1753,7 +1991,7 @@ a.learn-more .fa,
         .filter-box a.view-more,
         .filter-box .view-more {
           display: none;
-          margin-top: 10px;
+          padding: 10px 0;
           margin-left: 1px;
           font-size: 10px;
           font-weight: 700;
@@ -1915,6 +2153,7 @@ a.form-reset,
   .form-reset .rcf-close-button {
     padding-right: 7px;
     font-size: 8px;
+    line-height: 10px;
     color: #862e2b;
     letter-spacing: .02em;
   }
