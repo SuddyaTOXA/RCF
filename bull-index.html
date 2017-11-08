@@ -236,13 +236,14 @@
                     <div class="container">
                         <span class="tabs-nav-name">View offerings by</span>
                         <ul class="tabs-nav-list">
-                            <li class="active"><a href="/broken" class="tab-btn"><span class="rcf-bull-icon"></span>Photo View</a></li>
-                            <li><a href="/broken" class="tab-btn"><span class="rcf-list-icon"></span>EPD Comparison</a></li>
+                            <li><a href="/broken" class="tab-btn"><span class="rcf-bull-icon"></span>Photo View</a></li>
+                            <li class="active"><a href="/broken" class="tab-btn"><span class="rcf-list-icon"></span>EPD Comparison</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="container">
-                    <div class="tab-box show">
+                    <div class="tab-box-list">
+                        <div class="tab-box">
                         <aside class="sidebar">
                             <div class="widget-filter">
                                 <form>
@@ -581,6 +582,915 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                        </div>
+                        <div class="tab-box show">
+                            <div class="sort-box table-tab">
+                                <ul class="sort-list">
+                                    <li>
+                                        <span class="sort-title">Filter results</span>
+                                        <span class="select-wrap">
+                                            <select>
+                                                <option selected value="">Select Filter</option>
+                                                <option value="">MRB (High to Low) </option>
+                                                <option value="">MRB (Low to High)</option>
+                                            </select>
+                                        </span>
+                                        <a href="/broken" class="form-reset show"><span class="rcf-close-button"></span> Clear All</a>
+                                        <a href="/broken" class="form-reset show"><span class="rcf-close-button"></span> Bull</a>
+                                    </li>
+                                    <li class="right">
+                                        <span class="sort-title">jump to lot #</span>
+                                        <input class="input-style" type="text" placeholder="22">
+                                    </li>
+                                </ul>
+                            </div>
+                            <h2 class="table-title">EPD Comparison Table</h2>
+
+                            <div class="bull-table-wrap">
+                                <div class="bull-table-box">
+                                    <table class="bull-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="lot">
+                                                    <span class="table-coll-title">
+                                                        Lot #
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="tattoo">
+                                                    <span class="table-coll-title">
+                                                        Tattoo
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="video">
+                                                     <span class="table-coll-title">
+                                                         Video
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="breed">
+                                                     <span class="table-coll-title up">
+                                                         Breed
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="category">
+                                                     <span class="table-coll-title down">
+                                                         Category
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="ce">
+                                                     <span class="table-coll-title">
+                                                         CE
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="bw">
+                                                     <span class="table-coll-title">
+                                                         BW
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="yw">
+                                                     <span class="table-coll-title">
+                                                         YW
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="mww">
+                                                     <span class="table-coll-title">
+                                                         MWW
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="mb">
+                                                     <span class="table-coll-title">
+                                                         MB
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="api">
+                                                     <span class="table-coll-title">
+                                                         API
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="ti">
+                                                     <span class="table-coll-title">
+                                                         TI
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="sire">
+                                                     <span class="table-coll-title">
+                                                         Sire
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                                <th class="dob">
+                                                     <span class="table-coll-title">
+                                                         DOB
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="lot">001</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">002</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">003</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">004</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">005</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">006</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">007</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">008</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">009</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">010</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">011</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">012</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">013</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">014</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">015</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="bull-table fixed">
+                                        <thead>
+                                        <tr>
+                                            <th class="lot">
+                                                    <span class="table-coll-title">
+                                                        Lot #
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="tattoo">
+                                                    <span class="table-coll-title">
+                                                        Tattoo
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="video">
+                                                     <span class="table-coll-title">
+                                                         Video
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="breed">
+                                                     <span class="table-coll-title">
+                                                         Breed
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="category">
+                                                     <span class="table-coll-title">
+                                                         Category
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="ce">
+                                                     <span class="table-coll-title">
+                                                         CE
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="bw">
+                                                     <span class="table-coll-title">
+                                                         BW
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="yw">
+                                                     <span class="table-coll-title">
+                                                         YW
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="mww">
+                                                     <span class="table-coll-title">
+                                                         MWW
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="mb">
+                                                     <span class="table-coll-title">
+                                                         MB
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="api">
+                                                     <span class="table-coll-title">
+                                                         API
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="ti">
+                                                     <span class="table-coll-title">
+                                                         TI
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="sire">
+                                                     <span class="table-coll-title">
+                                                         Sire
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                            <th class="dob">
+                                                     <span class="table-coll-title">
+                                                         DOB
+                                                        <span class="sort-btn btn-up"></span>
+                                                        <span class="sort-btn btn-down"></span>
+                                                    </span>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="lot">001</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">002</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">003</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">004</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">005</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">006</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">007</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">008</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">009</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">010</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">011</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">012</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="lot">013</td>
+                                            <td class="tattoo">216C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">15</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">57</td>
+                                            <td class="mb">.93</td>
+                                            <td class="api">175</td>
+                                            <td class="ti">90</td>
+                                            <td class="sire">LRS TOP TEN 104A</td>
+                                            <td class="dob">11.8.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">014</td>
+                                            <td class="tattoo">457C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">18</td>
+                                            <td class="bw">-.2</td>
+                                            <td class="yw">116</td>
+                                            <td class="mww">58</td>
+                                            <td class="mb">.71</td>
+                                            <td class="api">174</td>
+                                            <td class="ti">87</td>
+                                            <td class="sire">WS ALL-AROUND Z35</td>
+                                            <td class="dob">11.24.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lot">015</td>
+                                            <td class="tattoo">461C</td>
+
+                                            <td class="video">
+                                                <a href="/broken" class="btn-play"><span class="rcf-play"></span></a>
+                                                <div class="table-video-box">
+                                                    <img src="img/bull.jpg" alt="bull">
+                                                </div>
+                                            </td>
+                                            <td class="breed">SimAngus</td>
+                                            <td class="category">Bull</td>
+                                            <td class="ce">14</td>
+                                            <td class="bw">-.1</td>
+                                            <td class="yw">95</td>
+                                            <td class="mww">60</td>
+                                            <td class="mb">.52</td>
+                                            <td class="api">161</td>
+                                            <td class="ti">85</td>
+                                            <td class="sire">GW PREMIUM BEEF 021TS</td>
+                                            <td class="dob">10.6.15</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

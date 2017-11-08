@@ -32,16 +32,19 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.rcf-list-icon:before {
-    content: "\e902";
-}
 .rcf-close-button:before {
     content: "\e900";
 }
 .rcf-arrow:before {
     content: "\e901";
 }
+.rcf-list-icon:before {
+    content: "\e902";
+}
 .rcf-bull-icon:before {
     content: "\e903";
+}
+.rcf-play:before {
+    content: "\e904";
 }
 

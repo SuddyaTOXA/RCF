@@ -12,7 +12,26 @@
         font-size: 13px;
     }
 }
+@media all and (max-width: 1200px) {
+    .bull-table {
+        table-layout: inherit;
+    }
+}
 @media all and (max-width: 1024px) {
+    .bull-table-box {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+        .bull-table {
+            table-layout: fixed;
+        }
+        .bull-table.fixed {
+            display: table;
+        }
+            .bull-table tbody tr:hover td {
+                background-color: #ffffff;
+            }
+
     #header {
         padding-top: 20px;
         height: 96px;
