@@ -2329,8 +2329,7 @@ a.learn-more .fa,
                                     max-width: 100%;
                                     height: auto;
                                   }
-                            .bull-table.fixed tbody td,
-                            .bull-table.fixed thead th {
+                            .bull-table.fixed {
                                 background-color: #ffffff;
                             }
                       .table-coll-title {
@@ -2350,9 +2349,6 @@ a.learn-more .fa,
                           -moz-transition: .35s;
                           -o-transition: .35s;
                           transition: .35s;
-                        }
-                        .sort-btn:hover {
-                          color: #000000;
                         }
                         .sort-btn.btn-up {
                           top: -10px;
