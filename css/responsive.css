@@ -445,6 +445,9 @@
         padding-top: 60px;
         background-image: url(../img/banner_mob_bg.jpg);
     }
+    .section-banner:not(.show-next-action) .banner-table {
+        height: 170px;
+    }
         .desktop-img {
             display: none;
         }
@@ -528,6 +531,7 @@
                 padding: 0;
             }
                 .tabs-nav-name {
+                    padding-top: 5px;
                     padding-left: 20px;
                     font-size: 10px;
                 }
@@ -536,10 +540,11 @@
                     max-width: 100%;
                     max-width: -webkit-calc(100% + 4px);
                     max-width: calc(100% + 4px);
-                    margin: 5px -2px 0;
+                    margin: 7px -2px 0;
                 }
                     .tabs-nav-list > li {
                         width: 50%;
+                        /*margin: 0 -1px;*/
                     }
                         a.tab-btn,
                         .tab-btn {
@@ -582,6 +587,7 @@
                     }
                         .bull-img-wrap {
                             float: none;
+                            max-width: none;
                             width: 100%;
                             width: -webkit-calc(100% + 40px);
                             width: calc(100% + 40px);
@@ -643,7 +649,7 @@
         max-width: 500px;
     }
         .popup-inner {
-            padding: 60px 40px 60px;
+            padding: 50px 30px;
         }
             .popup-title {
                 margin-bottom: 20px;
@@ -655,6 +661,10 @@
             .popup-desc > *:not(:last-child) {
                 margin-bottom: 16px;
             }
+        .popup .rcf-close {
+            top: 15px;
+            right: 15px;
+        }
     #footer {}
         #footer .container {
             max-width: 375px;
