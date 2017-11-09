@@ -47,4 +47,6 @@
 .rcf-play:before {
     content: "\e904";
 }
-
+.rcf-close:before {
+    content: "\e905";
+}
