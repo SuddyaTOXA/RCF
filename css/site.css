@@ -804,7 +804,8 @@ a.btn.sold,
   text-decoration: none;
   background-color: #000000;
 }
-.main-nav > ul > li > a.show + .dropdown-menu-wrap {
+.main-nav > ul > li > a.show + .dropdown-menu-wrap,
+.main-nav > ul > li:hover .dropdown-menu-wrap {
   top: 52px;
   visibility: visible;
   opacity: 1;
@@ -861,12 +862,9 @@ a.btn.sold,
   top: 32px;
   right: 28px;
   width: 95%;
-  width: -webkit-calc(100% - 158px);
   width: calc(100% - 158px);
   -webkit-transition: .35s ease-in-out;
-  -khtml-transition: .35s ease-in-out;
   -moz-transition: .35s ease-in-out;
-  -ms-transition: .35s ease-in-out;
   -o-transition: .35s ease-in-out;
   transition: .35s ease-in-out;
   visibility: hidden;
