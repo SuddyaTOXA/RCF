@@ -630,6 +630,22 @@
         .table-video-box {
             left: -153px;
         }
+    .popup-wrap {
+        max-width: 500px;
+    }
+        .popup-inner {
+            padding: 60px 40px 60px;
+        }
+            .popup-title {
+                margin-bottom: 20px;
+                font-size: 28px;
+            }
+            .popup-desc {
+                font-size: 16px;
+            }
+            .popup-desc > *:not(:last-child) {
+                margin-bottom: 16px;
+            }
     #footer {}
         #footer .container {
             max-width: 375px;
