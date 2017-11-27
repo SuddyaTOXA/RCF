@@ -2582,7 +2582,7 @@ a.learn-more .fa,
         }
         .section-ready-buy .left-box:after {
             position: absolute;
-            z-index: 20;
+            z-index: 5;
             content: '';
             top: 0;
             right: -90%;
