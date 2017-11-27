@@ -3,7 +3,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden] { display: none; }
-p { -webkit-margin-before: 0; -webkit-margin-after: 0; max-width: 600px; }
+p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
 a { cursor: pointer; text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: none; }
@@ -391,7 +391,13 @@ select {
   position: relative;
   min-height: 100%;
 }
+/*----------------------------------CONTENT-----------------------------------------*/
+.content {
 
+}
+    .content  * {
+        font-weight: 300;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------BUTTON---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -408,6 +414,8 @@ a.btn,
   text-align: center;
   word-spacing: 0.02em;
   letter-spacing: .03em;
+  border: none;
+    background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -591,7 +599,28 @@ a.btn.sold,
   .btn.sold:focus:before {
     background-color: transparent;
   }
-  /*----------------------------------------------------------------------------------*/
+a.btn.grey,
+.btn.grey {
+    color: #000000;
+}
+a.btn.grey:before,
+.btn.grey:before {
+    border-color: #c4c4c4;
+    background-color: #c4c4c4;
+}
+a.btn.grey:hover,
+a.btn.grey:focus,
+.btn.grey:hover,
+.btn.grey:focus {
+    color: #000000;
+}
+a.btn.grey:hover:before,
+a.btn.grey:focus:before,
+.btn.grey:hover:before,
+.btn.grey:focus:before {
+    background-color: transparent;
+}
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 #header {
@@ -1725,6 +1754,16 @@ a.learn-more .fa,
       width: 100%;
       padding-top: 36px;
     }
+      .banner-cell {
+          display: table-cell;
+          vertical-align: middle;
+      }
+        .banner-title {
+            max-width: 600px;
+            font: 500 75px/1.15 "URWDINSemiCond", Arial, sans-serif;
+            letter-spacing: .01em;
+            word-spacing: .01em;
+        }
       .section-banner .next-action-cell {
         vertical-align: middle;
       }
@@ -1827,6 +1866,16 @@ a.learn-more .fa,
       .banner-link:focus {
         opacity: 1;
       }
+.section-banner.small {
+    padding: 100px 0 60px;
+}
+    .section-banner.small .container {
+        max-width: 1020px;
+    }
+        .small .banner-table {
+            height: 265px;
+            padding-top: 62px;
+        }
 /*----------------------------------SECTION-BULLS-----------------------------------*/
 .section-bulls {
   overflow: hidden;
@@ -2045,7 +2094,7 @@ a.learn-more .fa,
             margin-bottom: -3px;
           }
             .buy-bull > *:not(:first-child) {
-              margin-left: -14px;
+              margin-left: -15px;
             }
               a.buy-bull:hover .btn,
               a.buy-bull:focus .btn,
@@ -2072,6 +2121,31 @@ a.learn-more .fa,
                 background-color: #862e2b;
               }
 
+                a.buy-bull:hover .sold,
+                a.buy-bull:focus .sold,
+                .buy-bull:hover a.sold,
+                .buy-bull:focus a.sold {
+                    color: #000000;
+                }
+                a.buy-bull:hover .sold:before,
+                a.buy-bull:focus .sold:before,
+                .buy-bull:hover a.sold:before,
+                .buy-bull:focus a.sold:before {
+                    background-color: #ffffff;
+                }
+                a.buy-bull:hover .btn.grey,
+                a.buy-bull:focus .btn.grey,
+                .buy-bull:hover a.btn.grey,
+                .buy-bull:focus a.btn.grey {
+                    color: #ffffff;
+                }
+                a.buy-bull:hover .btn.grey:before,
+                a.buy-bull:focus .btn.grey:before,
+                .buy-bull:hover a.btn.grey:before,
+                .buy-bull:focus a.btn.grey:before {
+                    background-color: #000000;
+                    border-color: #000000;
+                }
             .bull-info-box {
               margin-bottom: 18px;
             }
@@ -2410,6 +2484,172 @@ a.learn-more .fa,
                 .bull-table.fixed .dob {
                   display: none;
                 }
+/*----------------------------------SECTION-TESTIMONIALS----------------------------*/
+.section-testimonials {
+    padding: 54px 0 149px;
+}
+    .section-testimonials .container {
+        max-width: 1020px;
+    }
+        .section-testimonials .content {
+            max-width: 900px;
+            margin-bottom: 110px;
+            font-size: 18px;
+            line-height: 1.9;
+            /*letter-spacing: -.01em;*/
+            word-spacing: -.01em;
+        }
+        .testimonials-list {}
+            .testimonials-list > li {
+                display: block;
+                margin-bottom: 158px;
+            }
+            .testimonials-list > li:last-child {
+                margin-bottom: 0;
+            }
+                .testimonial-box {
+                    position: relative;
+                    max-width: 760px;
+                    padding: 76px 0 0;
+                }
+                .testimonial-box:before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 47px;
+                    height: 38px;
+                    background-image: url(../img/quote.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                    .testimonial-box .content {
+                        margin-bottom: 26px;
+                        font-size: 36px;
+                        font-weight: 300;
+                        line-height: 1.4;
+                        /*word-spacing: -.0em;*/
+                    }
+                    .testimonial-author {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 1.1;
+                    }
+                        .testimonial-author span {
+                            display: block;
+                            margin-bottom: 9px;
+                        }
+/*-------------------------------------SECTION-READY-BUY----------------------------*/
+.section-ready-buy {
+    /*padding: 60px 0 60px;*/
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(29,29,29,1) 50.1%, rgba(29,29,29,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(50.1%, rgba(29,29,29,1)), color-stop(100%, rgba(29,29,29,1)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(29,29,29,1) 50.1%, rgba(29,29,29,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(29,29,29,1) 50.1%, rgba(29,29,29,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(29,29,29,1) 50.1%, rgba(29,29,29,1) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(29,29,29,1) 50.1%, rgba(29,29,29,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#1d1d1d', GradientType=1 );
+}
+.section-bulls + .section-ready-buy {
+    margin-top: -80px;
+}
+    .section-ready-buy .container {
+        overflow: hidden;
+        display: table;
+        width: 100%;
+        max-width: 1020px;
+    }
+        .section-ready-buy .left-box,
+        .section-ready-buy .right-box {
+            position: relative;
+            display: table-cell;
+            height: 100%;
+            padding: 34px 0 39px;
+            vertical-align: top;
+        }
+        .section-ready-buy .left-box > *,
+        .section-ready-buy .right-box > * {
+            position: relative;
+            z-index: 10;
+        }
+        .section-ready-buy .left-box {
+            width: 40.5%;
+            padding-right: 50px;
+            padding-left: 74px;
+            background-color: #000000;
+        }
+        .section-ready-buy .left-box:after {
+            position: absolute;
+            z-index: 20;
+            content: '';
+            top: 0;
+            right: -90%;
+            width: 100%;
+            height: 100%;
+            background-color: #1d1d1d;
+            -webkit-transform: skew(-10deg);
+            -moz-transform: skew(-10deg);
+            -o-transform: skew(-10deg);
+            transform: skew(-10deg);
+        }
+        .section-ready-buy .right-box {
+            padding-left: 36px;
+            background-color: #1d1d1d;
+        }
+            .box-title {
+                margin-bottom: 22px;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1.25;
+                word-spacing: -.02em;
+                color: #ffffff;
+            }
+                a.ready-buy-link {
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #ffffff;
+                }
+            .ready-buy-form {}
+                .ready-buy-box {
+                    overflow: hidden;
+                    position: relative;
+                    max-width: 330px;
+                    margin-left: -1px;
+                    padding-top: 3px;
+                }
+                    .ready-buy-box .input-style {
+                        color:rgba(255, 255, 255, .5);
+                        border: 1px solid rgba(255, 255, 255, .5);
+                        background-color: #1d1d1d;
+                    }
+                    .ready-buy-box .btn {
+                        position: absolute;
+                        right: -13px;
+                        top: 3px;
+                        font-size: 12px;
+                        padding: 12px 30px 11px 23px;
+                        min-width: inherit;
+                    }
+                    .ready-buy-box .btn:hover,
+                    .ready-buy-box .btn:focus {
+                        color: #862e2b;
+                    }
+                    .ready-buy-box .btn:hover:before,
+                    .ready-buy-box .btn:focus:before {
+                        background-color: #d1d1d1;
+                    }
+.section-banner.private-treaty  {
+    padding-bottom: 80px;
+}
+.section-banner.private-treaty .container {
+    max-width: 1198px;
+}
+    .private-treaty .banner-table {
+        height: 245px;
+        padding-top: 0;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
