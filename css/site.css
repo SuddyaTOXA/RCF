@@ -1745,9 +1745,10 @@ a.learn-more .fa,
   background-repeat: no-repeat;
   background-size: cover;
 }
-  .section-banner .container {
-
-  }
+    .banner-title.center {
+        text-align: center;
+        margin: auto;
+    }
     .banner-table {
       display: table;
       height: 360px;
@@ -2821,6 +2822,78 @@ a.learn-more .fa,
         text-decoration: none;
         cursor: pointer;
     }
+/*-------------------------------------SECTION-GRAPHS-------------------------------*/
+.section-graphs {
+    padding: 64px 0 65px;
+    background-color: #1d1d1d;
+}
+    .section-graphs .container {
+        max-width: 1020px;
+    }
+    .graphs-list {}
+        .graphs-list > li {
+            display: block;
+            margin-bottom: 88px;
+        }
+        .graphs-list > li:last-child {
+            margin-bottom: 0;
+        }
+            .graph-box {
+                max-width: 827px;
+                color: #ffffff;
+            }
+                .graph-title {
+                    margin-bottom: 22px;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                .graph-img-wrap {
+                    margin-bottom: 30px;
+                }
+                    .graph-img-wrap img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                .graph-info {
+                    margin-right: 10px;
+                    text-align: right;
+                }
+                    .circle {
+                        position: relative;
+                        margin-left: 46px;
+                        padding-left: 28px;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .circle:after {
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 0;
+                        width: 18px;
+                        height: 18px;
+                        -webkit-border-radius: 50%;
+                        -khtml-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                    .circle.red:after {
+                        background-color: #852D2B;
+                    }
+                    .circle.grey:after {
+                        background-color: #9B9B9B;
+                    }
+.section-graphs + .section-testimonials {
+    padding-top: 120px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
