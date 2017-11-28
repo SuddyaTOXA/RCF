@@ -238,12 +238,26 @@
     .testimonials-list > li {
         margin-bottom: 100px;
     }
+    .graph-title,
     .box-title {
         margin-bottom: 14px;
         font-size: 20px;
     }
     .section-ready-buy .left-box {
         padding-left: 20px;
+    }
+    .percentages-list > li {
+        width: 49%;
+    }
+    .percentages-list > li:first-child,
+    .percentages-list > li:last-child {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .circle {
+        display: inline-block;
+        margin-bottom: 4px;
     }
 }
 @media all and (max-width: 767px) {
@@ -844,5 +858,47 @@
     }
     .section-ready-buy .right-box:before {
         background-color: #1d1d1d;
+    }
+    .percentages-list > li {
+        width: 100%;
+    }
+    .percentage-more-box .left-box {
+        margin-bottom: 60px;
+    }
+    .percentage-more-box .left-box,
+    .percentage-more-box .right-box {
+        float: none;
+        width: 100%;
+    }
+    .weight-box .value {
+        font-size: 120px;
+        line-height: 100px;
+    }
+    .weight-box .units {
+        font-size: 30px;
+    }
+    .graphs-list > li {
+        margin-bottom: 60px;
+    }
+    .percentages-list {
+        margin-bottom: 22px;
+    }
+    .graph-img-wrap {
+        margin-bottom: 10px;
+    }
+    .circle {
+        margin-left: 12px;
+        padding-left: 20px;
+        font-size: 13px;
+    }
+    .circle:after {
+        width: 13px;
+        height: 13px;
+    }
+    .section-graphs + .section-testimonials {
+        padding-top: 70px;
+    }
+    .content {
+        font-size: 16px;
     }
 }

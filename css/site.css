@@ -3030,6 +3030,9 @@ a.learn-more .fa,
                     margin-right: 10px;
                     text-align: right;
                 }
+                    .graph-info > *:first-child {
+                        margin-left: 0;
+                    }
                     .circle {
                         position: relative;
                         margin-left: 46px;
