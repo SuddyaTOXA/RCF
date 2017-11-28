@@ -869,6 +869,7 @@
     .percentage-more-box .right-box {
         float: none;
         width: 100%;
+        padding: ;
     }
     .weight-box .value {
         font-size: 120px;
@@ -900,5 +901,61 @@
     }
     .content {
         font-size: 16px;
+    }
+    .content h1, .content .h1style {
+        font-size: 26px;
+    }
+    .content h2, .content .h2style {
+        font-size: 24px;
+    }
+    .content h3, .content .h3style {
+        font-size: 20px;
+    }
+    .content h4, .content .h4style {
+        font-size: 19px;
+    }
+    .content h5, .content .h5style {
+        font-size: 18px;
+    }
+    .content h6, .content .h6style {
+        font-size: 17px;
+    }
+    .info-title {
+        font-size: 16px;
+    }
+    .info-sub-title {
+
+    }
+    .info-list > li:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .content-table tr td,
+    .content-table tr th {
+        font-size: 15px;
+    }
+    .content-table tr th span {
+        font-size: 11px;
+    }
+    .section-content {
+        padding-bottom: 60px;
+    }
+    .content-table-wrap {
+        overflow-x: auto;
+    }
+    .content-table {
+        table-layout: fixed;
+        width: 540px;
+    }
+    .info-box .left-box,
+    .info-box .right-box {
+        float: none;
+        width: 100%;
+    }
+    .info-box .left-box {
+        margin-bottom: 4px;
+        text-align: left;
+    }
+    .info-title {
+        max-width: 100%;
     }
 }
