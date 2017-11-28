@@ -393,10 +393,19 @@ select {
 }
 /*----------------------------------CONTENT-----------------------------------------*/
 .content {
-
+    font-size: 18px;
+    line-height: 1.9;
 }
     .content  * {
         font-weight: 300;
+    }
+    .content  > *:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .content b,
+    .content strong {
+        font-weight: 700;
+        word-spacing: -.06em;
     }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------BUTTON---------------------------------------*/
@@ -2605,7 +2614,17 @@ a.learn-more .fa,
                 font-weight: 700;
                 line-height: 1.25;
                 word-spacing: -.02em;
+                /*color: #ffffff;*/
+            }
+            .inverse .box-title {
                 color: #ffffff;
+            }
+            .box-title.small {
+                display: block;
+                margin-bottom: 12px;
+                font-size: 12px;
+                font-weight: 300;
+                text-transform: uppercase;
             }
                 a.ready-buy-link {
                     font-size: 18px;
@@ -2822,6 +2841,159 @@ a.learn-more .fa,
         text-decoration: none;
         cursor: pointer;
     }
+/*-------------------------------------SECTION-PERCENTAGES--------------------------*/
+.section-percentages {
+    padding: 56px 0 100px;
+}
+    .section-percentages .container {
+        max-width: 1054px;
+    }
+    .section-percentages .content {
+        max-width: 940px;
+        margin-bottom: 84px;
+        padding: 0 18px;
+
+    }
+        .section-percentages .box-title {
+            margin-bottom: 34px;
+            letter-spacing: .02em;
+            text-align: center;
+        }
+        .percentages-wrap {
+            text-align: center;
+        }
+            .percentages-list {
+                display: inline-block;
+                width: 100%;
+                margin: 0 -20px 72px;
+            }
+                .percentages-list > li {
+                    display: inline-block;
+                    width: 32%;
+                    margin-bottom: 40px;
+                    padding: 0 20px;
+                }
+                .percentages-list > li:first-child {
+                    text-align: left;
+                    padding-left: 0;
+                }
+                .percentages-list > li:last-child {
+                    text-align: right;
+                    padding-right: 0;
+                }
+                    .percentage-box {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                       text-align: center;
+                    }
+                        .percentage-graph {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            height: 255px;
+                            margin-bottom: 30px;
+                        }
+                            .percentage-graph .svg-animate {
+                                -webkit-transform: rotate(-90deg);
+                                -ms-transform: rotate(-90deg);
+                                transform: rotate(-90deg);
+                            }
+                            .metric-data-wrap {
+                                position: absolute;
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                top: 50%;
+                                left: 0;
+                                padding: 0 46px;
+                                box-sizing: border-box;
+                                -webkit-transform: translateY(-50%);
+                                -ms-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                                .percentage-graph .metric-percentage {
+                                    position: relative;
+                                    display: block;
+                                    font: 600 105px/1 "Rift", Arial, sans-serif;
+                                    color: #000000;
+                                    text-align: center;
+                                }
+                        .percentage-desc {
+                            max-width: 200px;
+                            margin: 0 auto;
+                        }
+                            .percentage-desc * {
+                                font-size: 14px;
+                                font-weight: 700;
+                                line-height: 1.6;
+                                letter-spacing: .01em;
+                            }
+        .percentage-more-box {
+            overflow: hidden;
+            /*margin: 0 -10px 0;*/
+            text-align: left;
+        }
+            .percentage-more-box .left-box,
+            .percentage-more-box .right-box {
+                float: left;
+                padding: 0 16px;
+            }
+            .percentage-more-box .left-box {
+                width: 56.8%;
+            }
+            .percentage-more-box .right-box {
+                width: 43.2%;
+            }
+                .percentage-more-box .box-title {
+                    margin-bottom: 30px;
+                    letter-spacing: 0;
+                    text-align: left;
+                }
+                .percentage-more-box .box-title.small {
+                    margin-bottom: 6px;
+                    letter-spacing: .04em;
+                    word-spacing: .04em;
+                }
+                .percentage-table {
+                    max-width: 400px;
+                    width: 100%;
+                }
+                    .percentage-table thead {
+                    }
+                    .percentage-table tbody {}
+                        .percentage-table tr th {
+                            padding-bottom: 13px;
+                            font-weight: 700;
+                            border-bottom: 1px solid #000000;
+                        }
+                        .percentage-table tr td {
+                            padding: 13px 0 13px;
+                            font-weight: 300;
+                            border-bottom: 1px solid #c4c4c4;
+                        }
+                        .percentage-table tr td:first-child{
+                            width: 240px;
+                        }
+                .weight-box {
+                    margin-top: -11px;
+                }
+                    .weight-box span {
+                        display: inline-block;
+                        vertical-align: bottom;
+                    }
+                    .weight-box .value {
+                        font: 600 156px/130px "Rift", Arial, sans-serif;
+                        letter-spacing: .04em;
+                    }
+                    .weight-box .units {
+                        position: relative;
+                        left: 2px;
+                        font-size: 33px;
+                        line-height: 1;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
 /*-------------------------------------SECTION-GRAPHS-------------------------------*/
 .section-graphs {
     padding: 64px 0 65px;
