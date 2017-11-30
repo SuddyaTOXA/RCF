@@ -3711,8 +3711,12 @@ a.learn-more .fa,
                     .bull-bottom-wrap .ready-buy-link {
                         color: #000000;
                     }
-            .section-bull-detail {}
-            .section-bull-detail {}
+            .section-bull-detail .dropdown-info-box {
+                color: #000000;
+            }
+                .section-bull-detail .dropdown-info-box * {
+                    font-weight: 300;
+                }
 
 
 /*----------------------------------------------------------------------------------*/
