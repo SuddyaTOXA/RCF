@@ -2740,21 +2740,29 @@ a.learn-more .fa,
                     position: relative;
                     max-width: 330px;
                     margin-left: -1px;
-                    padding-top: 3px;
+                    margin-top: 26px;
+                    /*padding-top: 3px;*/
+                    border: 1px solid #ffffff;
+                    border: 1px solid rgba(255, 255, 255, .5);
                 }
                     .ready-buy-box .input-style {
                         color: #ffffff;
                         color:rgba(255, 255, 255, .5);
-                        border: 1px solid rgba(255, 255, 255, .5);
+                        /*border: 1px solid rgba(255, 255, 255, .5);*/
+                        border: none;
                         background-color: #1d1d1d;
                     }
                     .ready-buy-box .btn {
                         position: absolute;
                         right: -13px;
-                        top: 3px;
+                        top: 0;
                         font-size: 12px;
                         padding: 12px 30px 11px 23px;
                         min-width: inherit;
+                    }
+                    .ready-buy-box .btn:before {
+                        border-left-color: #ffffff;
+                        border-left-color: rgba(255, 255, 255, .5);
                     }
                     .ready-buy-box .btn:hover,
                     .ready-buy-box .btn:focus {
@@ -2763,6 +2771,7 @@ a.learn-more .fa,
                     .ready-buy-box .btn:hover:before,
                     .ready-buy-box .btn:focus:before {
                         background-color: #d1d1d1;
+                        border-color: #d1d1d1;
                     }
 .section-banner.private-treaty  {
     padding-bottom: 80px;
@@ -3616,6 +3625,11 @@ a.learn-more .fa,
                             -o-border-radius: 50%;
                             border-radius: 50%;
                         }
+                        .social-list > li > a:hover,
+                        .social-list > li > a:focus {
+                            color: #862e2b;
+                            border-color: #862e2b;
+                        }
                             .social-list .fa-facebook {
                                 position: relative;
                                 top: -1px;
@@ -3650,7 +3664,10 @@ a.learn-more .fa,
                      .section-bull-detail .bull-desc-table tr td:first-child {
                         padding-left: 0;
                         color: #959595;
-                    }
+                        font-size: 10px;
+                         line-height: 14px;
+                        font-weight: 700;
+                     }
                     .section-bull-detail .bull-desc-table tr:nth-child(even) td {
                         color: #959595;
                     }

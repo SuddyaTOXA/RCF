@@ -323,6 +323,9 @@
                 .bull-gallery-img-wrap {
                     max-width: 90px;
                 }
+    .social-box {
+        display: none;
+    }
 }
 @media all and (max-width: 767px) {
     .container,
@@ -611,6 +614,10 @@
                     color: rgba(255, 255, 255, .62);
                     opacity: 1;
                 }
+                .banner-links-wrap > span {
+                    border-color: rgba(255, 255, 255, .25) !important;
+                    color: rgba(255, 255, 255, .62);
+                }
                 a.banner-link:hover,
                 a.banner-link:focus,
                 .banner-link:hover,
@@ -805,7 +812,7 @@
             }
                 .footer-coll-box .left-box,
                 .footer-coll-box .right-box {
-                    padding: 27px 0;
+                    padding: 27px 8px;
                 }
                     .footer-coll-box .left-box .box,
                     .footer-coll-box .right-box .box {
@@ -915,6 +922,8 @@
     .section-ready-buy .right-box {
         display: block;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .section-ready-buy .left-box:after {
         content: none;
@@ -1153,7 +1162,7 @@
         line-height: 1.5;
     }
     .history-year {
-        font-weight: 300;
+        font-size: 30px;
     }
         .section-bull-detail .content {
             margin-bottom: 51px;
@@ -1178,6 +1187,7 @@
                 .bull-bottom-wrap .right-box .btn {
                     min-width: 154px;
                     margin-bottom: 33px;
+                    font-size: 12px;
                 }
                 .sale-detail-text {
                     margin-bottom: 3px;
