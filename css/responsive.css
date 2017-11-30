@@ -29,6 +29,18 @@
     .dob-box {
         width: 100%;
     }
+    .our-family-img {
+        margin-top: 15px;
+    }
+        .our-family-name {
+            top: 40px;
+        }
+        .our-family-name.bob {
+            left: 20px;
+        }
+        .our-family-name.joe {
+            right: 20px;
+        }
 }
 @media all and (max-width: 1024px) {
     .bull-table-box {
@@ -241,7 +253,7 @@
     .graph-title,
     .box-title {
         margin-bottom: 14px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .section-ready-buy .left-box {
         padding-left: 20px;
@@ -259,9 +271,70 @@
         display: inline-block;
         margin-bottom: 4px;
     }
+    .our-family-name {
+        font-size: 20px;
+    }
+    .history-year-box,
+    .history-list > li:nth-child(even) .history-year-box {
+        float: none;
+        margin-bottom: 4px;
+        padding: 0;
+        padding-top: 4px;
+    }
+    .history-box .content {
+        margin-bottom: 14px;
+    }
+    .section-history {
+        padding-bottom: 96px;
+    }
+    #header.dark + #main-content {
+        padding-top: 100px;
+    }
+    .section-our-family {
+        padding-top: 60px;
+    }
+    .bull-img {
+        float: none;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+        .bull-img img {
+            width: 100%;
+            height: auto;
+        }
+        .bull-right-box {
+            max-width: 500px;
+        }
+        .bull-desc-wrap {
+            overflow-x: auto;
+        }
+            .section-bull-detail .bull-desc-table {
+                min-width: 860px;
+            }
+            .bull-middle-box .left-box,
+            .bull-middle-box .right-box {
+                float: none;
+                width: 100%;
+            }
+            .bull-middle-box .left-box {
+                margin-bottom: 40px;
+            }
+                .bull-gallery-img-wrap {
+                    max-width: 90px;
+                }
 }
 @media all and (max-width: 767px) {
-    .container {
+    .container,
+    .section-our-family .container,
+    .section-testimonials .container,
+    .section-percentages .container,
+    .section-bull-detail .container,
+    .section-content .container,
+    .section-graphs .container,
+    .section-ready-buy .container,
+    .section-banner.small .container,
+    .section-banner.private-treaty .container {
         max-width: 375px;
     }
     #header {
@@ -292,7 +365,9 @@
         .mobile-menu-toggle {
             display: block;
         }
-
+    .banner-title {
+        width: auto;
+    }
     .section-hero {
         padding-top: 60px;
         padding-bottom: 320px;
@@ -815,7 +890,7 @@
 }
     .section-testimonials .content {
         margin-bottom: 80px;
-        font-size: 15px;
+        font-size: 14px;
     }
     .testimonial-box {
         padding-top: 50px;
@@ -844,15 +919,18 @@
     .section-ready-buy .left-box:after {
         content: none;
     }
+    .section-ready-buy .container {
+        overflow: visible;
+    }
     .section-ready-buy .left-box:before,
     .section-ready-buy .right-box:before {
         position: absolute;
         content: '';
         z-index: 5;
         top: 0;
-        left: -20px;
-        width: -webkit-calc(100% + 40px);
-        width: calc(100% + 40px);
+        left: -216px;
+        width: -webkit-calc(100% + 432px);
+        width: calc(100% + 432px);
         height: 100%;
         background-color: #000000;
     }
@@ -869,7 +947,6 @@
     .percentage-more-box .right-box {
         float: none;
         width: 100%;
-        padding: ;
     }
     .weight-box .value {
         font-size: 120px;
@@ -958,4 +1035,152 @@
     .info-title {
         max-width: 100%;
     }
+    .our-family-img {
+        margin-top: 35px;
+    }
+        .our-family-img img {
+            max-width: 1000px;
+            left: 49.2%;
+        }
+        .our-family-name {
+            top: 5px;
+            font-size: 16px;
+        }
+        .our-family-name.bob {
+            left: 5px;
+        }
+        .our-family-name.joe {
+            right: 5px;
+        }
+    a.btn-next-section,
+    .btn-next-section {
+        width: 65px;
+        height: 40px;
+    }
+    a.btn-next-section:after,
+    .btn-next-section:after {
+        width: 65px;
+        border-bottom-width: 40px;
+        border-left-width: 12px;
+        border-right-width: 12px;
+    }
+        a.btn-next-section .rcf-down,
+        .btn-next-section .rcf-down {
+            font-size: 16px;
+            line-height: 40px;
+        }
+    #header.dark + #main-content {
+        padding-top: 60px;
+    }
+    .section-our-family {
+        padding-top: 40px;
+    }
+    .section-our-family .banner-title {
+        margin-bottom: 14px;
+    }
+    .section-history:after {
+        content: none;
+    }
+        .history-box {
+            width: 100%;
+            padding: 0;
+            text-align: left;
+        }
+        .history-list > li:nth-child(even) .history-box {
+            padding: 0;
+        }
+        .history-list > li:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        .history-list >li:not(:first-child) {
+            margin-top: 0;
+        }
+    .section-bull-detail {
+        padding-top: 20px;
+
+    }
+        .section-bull-detail .banner-title {
+            margin-bottom: 16px;
+        }
+            .bull-top-box {
+                overflow: visible;
+            }
+            .bull-img {
+                max-width: none;
+                width: 100%;
+                width: -webkit-calc(100% + 40px);
+                width: calc(100% + 40px);
+                margin: 0 -20px 29px;
+            }
+            .section-bull-detail .bull-info-box {
+                margin-bottom: 18px;
+            }
+            .section-bull-detail .sire-box {
+                width: 54.2%;
+            }
+            .section-bull-detail .dob-box {
+                width: 45.8%;
+            }
+            .section-bull-detail .sire-dob-box {
+                margin-bottom: 29px;
+            }
+            .bull-detail-list {
+                margin-bottom: 26px;
+            }
+            .bull-desc-wrap {
+                margin-bottom: 31px;
+            }
+    .bull-middle {
+        margin-bottom: 29px;
+    }
+            .bull-middle-box .box-title {
+                 margin-bottom: 12px;
+             }
+            .bull-gallery-list {
+                margin: 0 -9px;
+            }
+                .bull-gallery-list > li {
+                    width: 32%;
+                    padding: 0 9px;
+
+                }
+                    .bull-gallery-img-wrap {
+                        max-width: 100%;
+                    }
+    .info-box .content,
+    .content {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .history-year {
+        font-weight: 300;
+    }
+        .section-bull-detail .content {
+            margin-bottom: 51px;
+        }
+            .bull-bottom-wrap .left-box,
+            .bull-bottom-wrap .right-box {
+                display: block;
+                width: 100%;
+                padding: 0;
+                border: none;
+            }
+            .bull-bottom-wrap .left-box {
+                margin-bottom: 28px;
+            }
+            .sale-detail-text,
+            .bull-bottom-wrap a.ready-buy-link,
+            .bull-bottom-wrap .ready-buy-link,
+            .bull-bottom-wrap .dropdown-info-box {
+                font-size: 14px;
+            }
+                .bull-bottom-wrap .right-box a.btn,
+                .bull-bottom-wrap .right-box .btn {
+                    min-width: 154px;
+                    margin-bottom: 33px;
+                }
+                .sale-detail-text {
+                    margin-bottom: 3px;
+                }
+
 }

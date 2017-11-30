@@ -50,3 +50,6 @@
 .rcf-close:before {
     content: "\e905";
 }
+.rcf-down:before {
+    content: "\e906";
+}
