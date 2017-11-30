@@ -1182,5 +1182,14 @@
                 .sale-detail-text {
                     margin-bottom: 3px;
                 }
-
+            .pedigree-table {
+                display: none;
+            }
+            .pedigree-mob-list {
+                display: block;
+            }
+    .bull-detail-table,
+    .bull-top-box {
+        margin-bottom: 36px;
+    }
 }
