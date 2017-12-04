@@ -715,8 +715,12 @@ a.btn.grey:focus:before,
   padding-bottom: 20px;
 }
 #header.dark {
+    padding: 0;
     background-color: #000000;
 }
+    #header.dark .logo {
+        margin-top: 30px;
+    }
 #header .container {
   position: relative;
 }
@@ -965,6 +969,20 @@ a.btn.grey:focus:before,
   color: #862e2b;
   text-decoration: none;
 }
+#header.dark .main-nav > ul {
+    padding-top: 0;
+}
+    #header.dark .main-nav > ul > li > a {
+        padding-top: 47px;
+        padding-bottom: 53px;
+    }
+        #header.dark .dropdown-menu-wrap {
+            top: 140px;
+        }
+        #header.dark .main-nav > ul > li > a.show + .dropdown-menu-wrap,
+        #header.dark .main-nav > ul > li:hover .dropdown-menu-wrap {
+            top: 120px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------DROPDOWN-MENU----------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -972,7 +990,7 @@ a.btn.grey:focus:before,
   position: absolute;
   display: block;
   z-index: 50;
-  top: 32px;
+  top: 72px;
   right: 28px;
   width: 95%;
   width: calc(100% - 158px);
@@ -2089,6 +2107,9 @@ a.learn-more .fa,
           .sort-list > li .input-style {
             display: inline-block;
             width: 62px;
+            padding-left: 14px;
+            padding-right: 14px;
+            text-align: center;
           }
           .sort-list > li > * {
             display: inline-block;
@@ -2111,7 +2132,9 @@ a.learn-more .fa,
         .table-tab .sort-list .right {
             float: right;
         }
-    .bulls-list {}
+    .bulls-list {
+        overflow: hidden;
+    }
       .bulls-list > li {
           position: relative;
           display: block;
@@ -2119,12 +2142,64 @@ a.learn-more .fa,
       .bulls-list > li:not(:last-child) {
         margin-bottom: 92px;
       }
+        .bulls-list > li a {
+            color: #000000;
+        }
+        .bulls-list > li a:hover .buy-bull .btn,
+        .bulls-list > li a:focus .buy-bull .btn {
+            color: #862e2b;
+        }
+        .bulls-list > li a:hover .buy-bull .btn:before,
+        .bulls-list > li a:focus .buy-bull .btn:before {
+            background-color: #ffffff;
+        }
+        .bulls-list > li a:hover .buy-bull .btn.white,
+        .bulls-list > li a:focus .buy-bull .btn.white {
+            color: #ffffff;
+        }
+        .bulls-list > li a:hover .buy-bull .btn.white:before,
+        .bulls-list > li a:focus .buy-bull .btn.white:before {
+            background-color: #862e2b;
+        }
+        .bulls-list > li a:hover .buy-bull .sold,
+        .bulls-list > li a:focus .buy-bull .sold {
+            color: #000000;
+        }
+        .bulls-list > li a:hover .buy-bull .sold:before,
+        .bulls-list > li a:focus .buy-bull .sold:before {
+            background-color: #ffffff;
+        }
+        .bulls-list > li a:hover .buy-bull .grey,
+        .bulls-list > li a:focus .buy-bull .grey {
+            color: #ffffff;
+        }
+        .bulls-list > li a:hover .buy-bull .grey:before,
+        .bulls-list > li a:focus .buy-bull .grey:before {
+            background-color: #000000;
+            border-color: #000000;
+        }
+
+        .bulls-list > li a:hover .btn,
+        .bulls-list > li a:focus .btn {
+            color: #862e2b;
+        }
+        .bulls-list > li a:hover .btn:before,
+        .bulls-list > li a:focus .btn:before {
+            background-color: transparent;
+        }
+         .bulls-list > li a:hover .btn:after,
+         .bulls-list > li a:focus .btn:after {
+             color: #862e2b;
+         }
+
         .bull-box {
           overflow: hidden;
           padding-top: 5px;
+          display: block;
         }
           .bull-img-wrap {
             float: left;
+            display: block;
             margin-right: 27px;
             max-width: 465px;
             width: 100%;
@@ -2135,11 +2210,13 @@ a.learn-more .fa,
             }
           .bull-desc {
             overflow: hidden;
+            display: block;
           }
             .bull-desc > *:last-child {
               margin-bottom: 0;
             }
           .lot-tattoo-wrap  {
+              display: block;
             margin-top: -5px;
             margin-bottom: 12px;
           }
@@ -2186,54 +2263,71 @@ a.learn-more .fa,
               a.buy-bull:hover .btn,
               a.buy-bull:focus .btn,
               .buy-bull:hover a.btn,
-              .buy-bull:focus a.btn {
+              .buy-bull:focus a.btn,
+              .buy-bull:hover .btn,
+              .buy-bull:focus .btn {
                 color: #862e2b;
               }
               a.buy-bull:hover .btn:before,
               a.buy-bull:focus .btn:before,
               .buy-bull:hover a.btn:before,
-              .buy-bull:focus a.btn:before {
+              .buy-bull:focus a.btn:before,
+              .buy-bull:hover .btn:before,
+              .buy-bull:focus .btn:before {
                 background-color: #ffffff;
               }
               a.buy-bull:hover .btn.white,
               a.buy-bull:focus .btn.white,
               .buy-bull:hover a.btn.white,
-              .buy-bull:focus a.btn.white {
+              .buy-bull:focus a.btn.white,
+              .buy-bull:hover .btn.white,
+              .buy-bull:focus .btn.white {
                 color: #ffffff;
               }
               a.buy-bull:hover .btn.white:before,
               a.buy-bull:focus .btn.white:before,
               .buy-bull:hover a.btn.white:before,
-              .buy-bull:focus a.btn.white:before {
+              .buy-bull:focus a.btn.white:before,
+              .buy-bull:hover .btn.white:before,
+              .buy-bull:focus .btn.white:before {
                 background-color: #862e2b;
               }
 
                 a.buy-bull:hover .sold,
                 a.buy-bull:focus .sold,
                 .buy-bull:hover a.sold,
-                .buy-bull:focus a.sold {
+                .buy-bull:focus a.sold,
+                .buy-bull:hover .sold,
+                .buy-bull:focus .sold {
                     color: #000000;
                 }
                 a.buy-bull:hover .sold:before,
                 a.buy-bull:focus .sold:before,
                 .buy-bull:hover a.sold:before,
-                .buy-bull:focus a.sold:before {
+                .buy-bull:focus a.sold:before,
+                .buy-bull:hover .sold:before,
+                .buy-bull:focus .sold:before {
                     background-color: #ffffff;
                 }
                 a.buy-bull:hover .btn.grey,
                 a.buy-bull:focus .btn.grey,
                 .buy-bull:hover a.btn.grey,
-                .buy-bull:focus a.btn.grey {
+                .buy-bull:focus a.btn.grey,
+                .buy-bull:hover .btn.grey,
+                .buy-bull:focus .btn.grey {
                     color: #ffffff;
                 }
                 a.buy-bull:hover .btn.grey:before,
                 a.buy-bull:focus .btn.grey:before,
                 .buy-bull:hover a.btn.grey:before,
-                .buy-bull:focus a.btn.grey:before {
+                .buy-bull:focus a.btn.grey:before,
+                .buy-bull:hover .btn.grey:before,
+                .buy-bull:focus .btn.grey:before {
                     background-color: #000000;
                     border-color: #000000;
                 }
             .bull-info-box {
+                display: block;
               margin-bottom: 18px;
             }
               .bull-info {
@@ -2276,6 +2370,7 @@ a.learn-more .fa,
                 }
             .sire-dob-box {
               overflow: hidden;
+              display: block;
               margin-bottom: 25px;
             }
               .sire-dob-box > * {
@@ -2290,14 +2385,15 @@ a.learn-more .fa,
                 width: 45.5%;
               }
                 .sire-dob-title {
+                  display: block;
                   margin-bottom: -5px;
                   font-size: 10px;
                   font-weight: 700;
                   text-transform: uppercase;
                   color: #949494;
                 }
-                  .sire-box span,
-                  .dob-box span {
+                  .sire-box span:not(.sire-dob-title),
+                  .dob-box span:not(.sire-dob-title) {
                     font-size: 14px;
                     font-weight: 400;
                     letter-spacing: .02em;
@@ -2874,7 +2970,6 @@ a.learn-more .fa,
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     padding: 20px;
-    overflow: auto; /* Enable scroll if needed */
     background-color: #000000;
     background-color: rgba(0, 0, 0, .85);
 }
@@ -2897,10 +2992,12 @@ a.learn-more .fa,
             vertical-align: middle;
         }
             .popup-inner {
+                overflow-y: auto;
                 position: relative;
                 padding: 90px 80px 90px;
                 background-color: rgb(21, 21, 21);
                 color: #ffffff;
+                max-height: 95%;
             }
                 .popup-container {}
                     .popup-title {
@@ -3514,6 +3611,32 @@ a.learn-more .fa,
                 .bull-info-box {
                     margin-bottom: 16px;
                 }
+            .section-bull-detail .lot-tattoo-btn-box {
+                float: right;
+                top: 3px;
+                margin-right: 0;
+            }
+            .section-bull-detail .lot-tattoo-wrap {
+                overflow: hidden;
+                max-width: 360px;
+                padding-bottom: 7px;
+                margin-bottom: 5px;
+            }
+            .section-bull-detail .lot-tattoo-box {
+                margin-right: 6px;
+            }
+                .section-bull-detail .lot-tattoo-box > span  {
+                    margin-left: 20px;
+                }
+                .section-bull-detail .lot-tattoo-box > span:first-child {
+                    margin-left: 0;
+                }
+                .section-bull-detail .lot-tattoo-box > span:not(:first-child):before {
+                    left: -15px;
+                }
+                .section-bull-detail .bull-detail-table tr td {
+                    padding-left: 10px;
+                }
             .section-bull-detail .sire-dob-box {
                 margin-bottom: 60px;
             }
@@ -3851,10 +3974,14 @@ a.learn-more .fa,
 
 .footer-coll-box .left-box,
 .footer-coll-box .right-box {
+    display: block;
   float: left;
   width: 50%;
 }
-
+.footer-coll-box .left-box .box,
+.footer-coll-box .right-box .box {
+    display: inline-block;
+}
 .footer-coll-box .left-box {
   padding-right: 10px;
 }
@@ -3869,12 +3996,12 @@ a.learn-more .fa,
   max-width: 400px;
   text-align: left;
 }
-.footer-coll-box .box a {
+.footer-coll-box a {
   display: block;
   text-decoration: none;
 }
-.footer-coll-box .box a:hover .view-more,
-.footer-coll-box .box a:focus .view-more {
+.footer-coll-box a:hover .view-more,
+.footer-coll-box a:focus .view-more {
   color: #862e2b;
 }
 #footer .footer-coll-box .section-title {
