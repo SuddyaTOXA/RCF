@@ -1863,6 +1863,9 @@ a.learn-more .fa,
           display: table-cell;
           vertical-align: middle;
       }
+      .small .banner-cell {
+          vertical-align: bottom;
+      }
         .banner-title {
             max-width: 600px;
             font: 500 75px/1.15 "URWDINSemiCond", Arial, sans-serif;
@@ -1980,6 +1983,7 @@ a.learn-more .fa,
         .small .banner-table {
             height: 265px;
             padding-top: 62px;
+            padding-bottom: 14px;
         }
 /*----------------------------------SECTION-BULLS-----------------------------------*/
 .section-bulls {
