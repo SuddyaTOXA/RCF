@@ -86,8 +86,8 @@
             margin-top: 20px;
         }
         #header.dark .main-nav > ul > li > a {
-            padding-top: 34px;
-            padding-bottom: 44px;
+            padding-top: 39px;
+            padding-bottom: 39px;
         }
     .dropdown-menu-wrap,
     .dropdown-menu-wrap.sales {
@@ -102,6 +102,10 @@
         -webkit-transform: translate(50%, 0);
         -o-transform: translate(50%, 0);
         transform: translate(50%, 0);
+    }
+    #header.dark .main-nav > ul > li > a.show + .dropdown-menu-wrap,
+    #header.dark .main-nav > ul > li:hover .dropdown-menu-wrap {
+        top: 96px;
     }
     .dropdown-menu .left-box,
     .dropdown-menu .right-box {
@@ -338,18 +342,6 @@
     }
 }
 @media all and (max-width: 767px) {
-    /*.container,*/
-    /*.section-our-family .container,*/
-    /*.section-testimonials .container,*/
-    /*.section-percentages .container,*/
-    /*.section-bull-detail .container,*/
-    /*.section-content .container,*/
-    /*.section-graphs .container,*/
-    /*.section-ready-buy .container,*/
-    /*.section-banner.small .container,*/
-    /*.section-banner.private-treaty .container {*/
-        /*max-width: 375px;*/
-    /*}*/
     #header {
         height: 62px;
         padding-top: 10px;
@@ -648,9 +640,6 @@
         padding-top: 31px;
         padding-bottom: 51px;
     }
-        /*.section-bulls .container {*/
-            /*max-width: 375px;*/
-        /*}*/
         .tabs-nav-box {
             margin-bottom: 18px;
         }
@@ -675,7 +664,6 @@
                 }
                     .tabs-nav-list > li {
                         width: 50%;
-                        /*margin: 0 -1px;*/
                     }
                         a.tab-btn,
                         .tab-btn {
@@ -750,7 +738,6 @@
                             margin-right: 12px;
                         }
                         .lot-tattoo-btn-box {
-                            /*margin-left: 12px;*/
                             margin-right: -14px;
                         }
                             a.btn.small, .btn.small {

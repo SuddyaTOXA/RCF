@@ -29,6 +29,18 @@
     .dob-box {
         width: 100%;
     }
+    .our-family-img {
+        margin-top: 15px;
+    }
+        .our-family-name {
+            top: 40px;
+        }
+        .our-family-name.bob {
+            left: 20px;
+        }
+        .our-family-name.joe {
+            right: 20px;
+        }
 }
 @media all and (max-width: 1024px) {
     .bull-table-box {
@@ -67,6 +79,16 @@
                     padding-right: 14px;
                     font-size: 18px;
                 }
+    #header.dark {
+        height: 96px;
+    }
+        #header.dark .logo {
+            margin-top: 20px;
+        }
+        #header.dark .main-nav > ul > li > a {
+            padding-top: 39px;
+            padding-bottom: 39px;
+        }
     .dropdown-menu-wrap,
     .dropdown-menu-wrap.sales {
         top: 67px;
@@ -80,6 +102,10 @@
         -webkit-transform: translate(50%, 0);
         -o-transform: translate(50%, 0);
         transform: translate(50%, 0);
+    }
+    #header.dark .main-nav > ul > li > a.show + .dropdown-menu-wrap,
+    #header.dark .main-nav > ul > li:hover .dropdown-menu-wrap {
+        top: 96px;
     }
     .dropdown-menu .left-box,
     .dropdown-menu .right-box {
@@ -226,11 +252,96 @@
     #footer .footer-coll-box .section-desc {
         margin-bottom: 14px;
     }
+    .banner-title {
+        font-size: 65px;
+    }
+    .section-testimonials .content {
+        font-size: 16px;
+    }
+    .testimonial-box .content {
+        font-size: 32px;
+    }
+    .testimonials-list > li {
+        margin-bottom: 100px;
+    }
+    .graph-title,
+    .box-title {
+        margin-bottom: 14px;
+        font-size: 18px;
+    }
+    .section-ready-buy .left-box {
+        padding-left: 20px;
+    }
+    .percentages-list > li {
+        width: 49%;
+    }
+    .percentages-list > li:first-child,
+    .percentages-list > li:last-child {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .circle {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+    .our-family-name {
+        font-size: 20px;
+    }
+    .history-year-box,
+    .history-list > li:nth-child(even) .history-year-box {
+        float: none;
+        margin-bottom: 4px;
+        padding: 0;
+        padding-top: 4px;
+    }
+    .history-box .content {
+        margin-bottom: 14px;
+    }
+    .section-history {
+        padding-bottom: 96px;
+    }
+    #header.dark + #main-content {
+        padding-top: 100px;
+    }
+    .section-our-family {
+        padding-top: 60px;
+    }
+    .bull-img {
+        float: none;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+        .bull-img img {
+            width: 100%;
+            height: auto;
+        }
+        .bull-right-box {
+            max-width: 500px;
+        }
+        .bull-desc-wrap {
+            overflow-x: auto;
+        }
+            .section-bull-detail .bull-desc-table {
+                min-width: 860px;
+            }
+            .bull-middle-box .left-box,
+            .bull-middle-box .right-box {
+                float: none;
+                width: 100%;
+            }
+            .bull-middle-box .left-box {
+                margin-bottom: 40px;
+            }
+                .bull-gallery-img-wrap {
+                    max-width: 90px;
+                }
+    .social-box {
+        display: none;
+    }
 }
 @media all and (max-width: 767px) {
-    .container {
-        max-width: 375px;
-    }
     #header {
         height: 62px;
         padding-top: 10px;
@@ -259,7 +370,15 @@
         .mobile-menu-toggle {
             display: block;
         }
-
+    #header.dark {
+        height: 62px;
+    }
+        #header.dark .logo {
+            margin-top: 10px;
+        }
+    .banner-title {
+        width: auto;
+    }
     .section-hero {
         padding-top: 60px;
         padding-bottom: 320px;
@@ -503,6 +622,10 @@
                     color: rgba(255, 255, 255, .62);
                     opacity: 1;
                 }
+                .banner-links-wrap > span {
+                    border-color: rgba(255, 255, 255, .25) !important;
+                    color: rgba(255, 255, 255, .62);
+                }
                 a.banner-link:hover,
                 a.banner-link:focus,
                 .banner-link:hover,
@@ -517,9 +640,6 @@
         padding-top: 31px;
         padding-bottom: 51px;
     }
-        .section-bulls .container {
-            max-width: 375px;
-        }
         .tabs-nav-box {
             margin-bottom: 18px;
         }
@@ -544,7 +664,6 @@
                 }
                     .tabs-nav-list > li {
                         width: 50%;
-                        /*margin: 0 -1px;*/
                     }
                         a.tab-btn,
                         .tab-btn {
@@ -619,7 +738,6 @@
                             margin-right: 12px;
                         }
                         .lot-tattoo-btn-box {
-                            /*margin-left: 12px;*/
                             margin-right: -14px;
                         }
                             a.btn.small, .btn.small {
@@ -667,7 +785,9 @@
         }
     #footer {}
         #footer .container {
+            display: table;
             max-width: 375px;
+            height: 142px;
         }
             .footer-top-box {
                 padding-top: 46px;
@@ -697,7 +817,9 @@
             }
                 .footer-coll-box .left-box,
                 .footer-coll-box .right-box {
-                    padding: 27px 0;
+                    display: table-cell;
+                    padding: 27px 8px;
+                    height: 100%;
                 }
                     .footer-coll-box .left-box .box,
                     .footer-coll-box .right-box .box {
@@ -771,5 +893,345 @@
                         .copyright a {
                             font-size: 8px;
                         }
+.small .banner-table {
+    padding-top: 10px;
+}
+    .banner-title {
+        font-size: 40px;
+    }
+.section-testimonials {
+    padding-bottom: 80px;
+}
+    .section-testimonials .content {
+        margin-bottom: 80px;
+        font-size: 14px;
+    }
+    .testimonial-box {
+        padding-top: 50px;
+    }
+        .testimonial-box .content {
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+    .testimonial-author {
+        font-size: 13px;
+    }
+        .testimonial-author span {
+            margin-bottom: 6px;
+        }
+    .testimonials-list > li {
+        margin-bottom: 60px;
+    }
+    .section-bulls + .section-ready-buy {
+        margin-top: 0;
+    }
+    .section-ready-buy .left-box,
+    .section-ready-buy .right-box {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section-ready-buy .left-box:after {
+        content: none;
+    }
+    .section-ready-buy .container {
+        overflow: visible;
+    }
+    .section-ready-buy .left-box:before,
+    .section-ready-buy .right-box:before {
+        position: absolute;
+        content: '';
+        z-index: 5;
+        top: 0;
+        left: -216px;
+        width: -webkit-calc(100% + 432px);
+        width: calc(100% + 432px);
+        height: 100%;
+        background-color: #000000;
+    }
+    .section-ready-buy .right-box:before {
+        background-color: #1d1d1d;
+    }
+    .percentages-list > li {
+        width: 100%;
+    }
+    .percentage-more-box .left-box {
+        margin-bottom: 60px;
+    }
+    .percentage-more-box .left-box,
+    .percentage-more-box .right-box {
+        float: none;
+        width: 100%;
+    }
+    .weight-box .value {
+        font-size: 120px;
+        line-height: 100px;
+    }
+    .weight-box .units {
+        font-size: 30px;
+    }
+    .graphs-list > li {
+        margin-bottom: 60px;
+    }
+    .percentages-list {
+        margin-bottom: 22px;
+    }
+    .graph-img-wrap {
+        margin-bottom: 10px;
+    }
+    .circle {
+        margin-left: 12px;
+        padding-left: 20px;
+        font-size: 13px;
+    }
+    .circle:after {
+        width: 13px;
+        height: 13px;
+    }
+    .section-graphs + .section-testimonials {
+        padding-top: 70px;
+    }
+    .content {
+        font-size: 16px;
+    }
+    .content h1, .content .h1style {
+        font-size: 26px;
+    }
+    .content h2, .content .h2style {
+        font-size: 24px;
+    }
+    .content h3, .content .h3style {
+        font-size: 20px;
+    }
+    .content h4, .content .h4style {
+        font-size: 19px;
+    }
+    .content h5, .content .h5style {
+        font-size: 18px;
+    }
+    .content h6, .content .h6style {
+        font-size: 17px;
+    }
+    .info-title {
+        font-size: 16px;
+    }
+    .info-sub-title {
 
+    }
+    .info-list > li:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .content-table tr td,
+    .content-table tr th {
+        font-size: 15px;
+    }
+    .content-table tr th span {
+        font-size: 11px;
+    }
+    .section-content {
+        padding-bottom: 60px;
+    }
+    .content-table-wrap {
+        overflow-x: auto;
+    }
+    .content-table {
+        table-layout: fixed;
+        width: 540px;
+    }
+    .info-box .left-box,
+    .info-box .right-box {
+        float: none;
+        width: 100%;
+    }
+    .info-box .left-box {
+        margin-bottom: 4px;
+        text-align: left;
+    }
+    .info-title {
+        max-width: 100%;
+    }
+    .our-family-img {
+        margin-top: 35px;
+    }
+        .our-family-img img {
+            max-width: 1000px;
+            left: 49.2%;
+        }
+        .our-family-name {
+            top: 5px;
+            font-size: 16px;
+        }
+        .our-family-name.bob {
+            left: 5px;
+        }
+        .our-family-name.joe {
+            right: 5px;
+        }
+    a.btn-next-section,
+    .btn-next-section {
+        width: 65px;
+        height: 40px;
+    }
+    a.btn-next-section:after,
+    .btn-next-section:after {
+        width: 65px;
+        border-bottom-width: 40px;
+        border-left-width: 12px;
+        border-right-width: 12px;
+    }
+        a.btn-next-section .rcf-down,
+        .btn-next-section .rcf-down {
+            font-size: 16px;
+            line-height: 40px;
+        }
+    #header.dark + #main-content {
+        padding-top: 60px;
+    }
+    .section-our-family {
+        padding-top: 40px;
+    }
+    .section-our-family .banner-title {
+        margin-bottom: 14px;
+    }
+    .section-history:after {
+        content: none;
+    }
+        .history-box {
+            width: 100%;
+            padding: 0;
+            text-align: left;
+        }
+        .history-list > li:nth-child(even) .history-box {
+            padding: 0;
+        }
+        .history-list > li:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        .history-list >li:not(:first-child) {
+            margin-top: 0;
+        }
+    .section-bull-detail {
+        padding-top: 20px;
+
+    }
+        .section-bull-detail .banner-title {
+            margin-bottom: 16px;
+        }
+            .bull-top-box {
+                overflow: visible;
+            }
+            .bull-img {
+                max-width: none;
+                width: 100%;
+                width: -webkit-calc(100% + 40px);
+                width: calc(100% + 40px);
+                margin: 0 -20px 29px;
+            }
+            .section-bull-detail .bull-info-box {
+                margin-bottom: 18px;
+            }
+            .section-bull-detail .sire-box {
+                width: 54.2%;
+            }
+            .section-bull-detail .dob-box {
+                width: 45.8%;
+            }
+            .section-bull-detail .sire-dob-box {
+                margin-bottom: 29px;
+            }
+            .bull-detail-list {
+                margin-bottom: 26px;
+            }
+            .bull-desc-wrap {
+                position: relative;
+                margin-right: -20px;
+                margin-bottom: 31px;
+            }
+            .bull-desc-table {
+                position: relative;
+            }
+            .bull-desc-table:after {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 100%;
+                background-color: #ffffff;
+            }
+            .bull-desc-table thead tr th:last-child,
+            .bull-desc-table tbody tr td:last-child {
+                padding-right: 20px;
+            }
+    .bull-middle {
+        margin-bottom: 29px;
+    }
+            .bull-middle-box .box-title {
+                 margin-bottom: 12px;
+             }
+            .bull-gallery-list {
+                margin: 0 -9px;
+            }
+                .bull-gallery-list > li {
+                    width: 32%;
+                    padding: 0 9px;
+
+                }
+                    .bull-gallery-img-wrap {
+                        max-width: 100%;
+                    }
+    .info-box .content,
+    .content {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .history-year {
+        font-size: 30px;
+    }
+        .section-bull-detail .content {
+            margin-bottom: 51px;
+        }
+            .bull-bottom-wrap .left-box,
+            .bull-bottom-wrap .right-box {
+                display: block;
+                width: 100%;
+                padding: 0;
+                border: none;
+            }
+            .bull-bottom-wrap .left-box {
+                margin-bottom: 28px;
+            }
+            .sale-detail-text,
+            .bull-bottom-wrap a.ready-buy-link,
+            .bull-bottom-wrap .ready-buy-link,
+            .bull-bottom-wrap .dropdown-info-box {
+                font-size: 14px;
+            }
+                .bull-bottom-wrap .right-box a.btn,
+                .bull-bottom-wrap .right-box .btn {
+                    min-width: 154px;
+                    margin-bottom: 33px;
+                    font-size: 12px;
+                }
+                .sale-detail-text {
+                    margin-bottom: 3px;
+                }
+            .pedigree-table {
+                display: none;
+            }
+            .pedigree-mob-list {
+                display: block;
+            }
+    .bull-detail-table,
+    .bull-top-box {
+        margin-bottom: 36px;
+    }
+    .history-list {
+        max-width: 510px;
+        margin: 0 auto;
+    }
+    .bull-middle-box {
+        overflow: visible;
+    }
 }
