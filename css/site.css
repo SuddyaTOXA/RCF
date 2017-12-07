@@ -2104,10 +2104,6 @@ a.learn-more .fa,
         .sort-list > li:first-child {
           margin-left: 0;
         }
-          .sort-list > li > span {
-            /*display: inline-block;*/
-            /*vertical-align: middle;*/
-          }
           .sort-list > li .input-style {
             display: inline-block;
             width: 62px;
@@ -2458,18 +2454,12 @@ a.learn-more .fa,
               width: 100%;
               table-layout: fixed;
             }
-                .lot,
-                .tattoo {
-                    /*position: absolute;*/
-                }
                 .lot {
                     position: relative;
                     width: 82px;
-                    /*left: 0;*/
                 }
                 .tattoo {
                     width: 76px;
-                    /*left: 82px;*/
                 }
                 .extra-cell {
                     display: none;
@@ -2523,7 +2513,6 @@ a.learn-more .fa,
                         letter-spacing: -.02em;
                         text-align: center;
                         text-transform: uppercase;
-                        /*writing-mode: sideways-rl;*/
                         -moz-transform: rotate(-90deg);
                         -ms-transform: rotate(-90deg);
                         -webkit-transform: rotate(-90deg);
@@ -2536,7 +2525,6 @@ a.learn-more .fa,
                     text-align: left;
                 }
                     .bull-table thead tr {
-                        /*position: relative;*/
                         border-bottom: 1px solid #000000;
                     }
                         .bull-table thead th {
@@ -2549,9 +2537,6 @@ a.learn-more .fa,
                     font-size: 12px;
                     font-weight: 300;
                 }
-                    .bull-table tbody tr {
-                        /*position: relative;*/
-                    }
                     .bull-table tbody tr.hover td,
                     .bull-table tbody tr:hover td {
                       background-color: #e8e8e8;
@@ -2583,9 +2568,7 @@ a.learn-more .fa,
                               color: #862e2b;
                             }
                             a.btn-play:hover + .table-video-box,
-                            /*a.btn-play:focus + .table-video-box,*/
                             .btn-play:hover + .table-video-box {
-                            /*.btn-play:focus + .table-video-box {*/
                               visibility: visible;
                               opacity: 1;
                             }
@@ -2709,7 +2692,6 @@ a.learn-more .fa,
             margin-bottom: 110px;
             font-size: 18px;
             line-height: 1.9;
-            /*letter-spacing: -.01em;*/
             word-spacing: -.01em;
         }
         .testimonials-list {}
@@ -2742,7 +2724,6 @@ a.learn-more .fa,
                         font-size: 36px;
                         font-weight: 300;
                         line-height: 1.4;
-                        /*word-spacing: -.0em;*/
                     }
                     .testimonial-author {
                         font-size: 14px;
@@ -2817,7 +2798,6 @@ a.learn-more .fa,
                 font-weight: 700;
                 line-height: 1.25;
                 word-spacing: -.02em;
-                /*color: #ffffff;*/
             }
             .inverse .box-title {
                 color: #ffffff;
@@ -2841,14 +2821,12 @@ a.learn-more .fa,
                     max-width: 330px;
                     margin-left: -1px;
                     margin-top: 26px;
-                    /*padding-top: 3px;*/
                     border: 1px solid #ffffff;
                     border: 1px solid rgba(255, 255, 255, .5);
                 }
                     .ready-buy-box .input-style {
                         color: #ffffff;
                         color:rgba(255, 255, 255, .5);
-                        /*border: 1px solid rgba(255, 255, 255, .5);*/
                         border: none;
                         background-color: #1d1d1d;
                     }
@@ -2966,13 +2944,13 @@ a.learn-more .fa,
 /*-------------------------------------POPUP----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 999;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    height: 100%;
     padding: 20px;
     background-color: #000000;
     background-color: rgba(0, 0, 0, .85);
@@ -2984,11 +2962,9 @@ a.learn-more .fa,
         position: relative;
         display: table;
         height: 100%;
-        margin: 0 auto; /* 15% from the top and centered */
-        /*border: 1px solid #888;*/
+        margin: 0 auto;
         max-width: 730px;
         width: 100%;
-        /*width: 80%; !* Could be more or less, depending on screen size *!*/
     }
         .popup-box {
             display: table-cell;
@@ -3145,7 +3121,6 @@ a.learn-more .fa,
                             }
         .percentage-more-box {
             overflow: hidden;
-            /*margin: 0 -10px 0;*/
             text-align: left;
         }
             .percentage-more-box .left-box,
@@ -3522,9 +3497,6 @@ a.learn-more .fa,
     background-color: #c4c4c4;
 }
 
-    .section-history .container {
-        /*max-width: 1020px;*/
-    }
         .history-list {
             position: relative;
         }
@@ -3686,39 +3658,6 @@ a.learn-more .fa,
                         .bull-detail-table .sire-dob-title {
                             display: block;
                         }
-                /*.bull-detail-list {*/
-                    /*overflow: hidden;*/
-                /*}*/
-                    /*.bull-detail-list > li {*/
-                        /*float: left;*/
-                        /*display: block;*/
-                        /*width: 10%;*/
-                        /*padding: 0 23px 9px;*/
-                        /*border: 1px solid #c4c4c4;*/
-                        /*border-left: none;*/
-                        /*border-top: none;*/
-                    /*}*/
-                    /*.bull-detail-list > li:nth-last-child(1),*/
-                    /*.bull-detail-list > li:nth-last-child(2),*/
-                    /*.bull-detail-list > li:nth-last-child(3),*/
-                    /*.bull-detail-list > li:nth-last-child(4) {*/
-                        /*border-bottom: none;*/
-                    /*}*/
-                    /*.bull-detail-list > li:nth-child(4n + 1) {*/
-                        /*width: 18.6%;*/
-                        /*padding-left: 0;*/
-                        /*clear: both;*/
-                    /*}*/
-                    /*.bull-detail-list > li:nth-child(4n + 2) {*/
-                        /*width: 28%;*/
-                    /*}*/
-                    /*.bull-detail-list > li:nth-child(4n + 3) {*/
-                        /*width: 29.4%;*/
-                    /*}*/
-                    /*.bull-detail-list > li:nth-child(4n + 4) {*/
-                        /*width: 24%;*/
-                        /*border-right: none;*/
-                    /*}*/
                         .detail-box {}
                             .detail-box .sire-dob-title {
                                 display: block;
