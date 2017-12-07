@@ -79,6 +79,16 @@
                     padding-right: 14px;
                     font-size: 18px;
                 }
+    #header.dark {
+        height: 96px;
+    }
+        #header.dark .logo {
+            margin-top: 20px;
+        }
+        #header.dark .main-nav > ul > li > a {
+            padding-top: 34px;
+            padding-bottom: 44px;
+        }
     .dropdown-menu-wrap,
     .dropdown-menu-wrap.sales {
         top: 67px;
@@ -367,6 +377,12 @@
         .mobile-menu-wrap,
         .mobile-menu-toggle {
             display: block;
+        }
+    #header.dark {
+        height: 62px;
+    }
+        #header.dark .logo {
+            margin-top: 10px;
         }
     .banner-title {
         width: auto;
